@@ -1,4 +1,4 @@
-<!-- ThinkFirst Studios sample site. Bernadette Kolar, Bluffside Real Estate Co., the phone number and the email address are FICTIONAL and used for demonstration only. Not a real agent, brokerage or business. No licence number, statistic or testimonial on this page is real — none are claimed. Photography is royalty-free stock, regional, and not represented as being of any specific address. Not for deployment to a live domain. Some photographs are Creative Commons works of named public places, credited in the footer. -->
+<!-- ThinkFirst Studios sample site. Bernadette Kolar, Bluffside Real Estate Co., the phone number and the email address are FICTIONAL and used for demonstration only. Not a real agent, brokerage or business. No licence number, statistic or testimonial on this page is real — none are claimed. Photography is stock or Creative Commons work credited in the footer. No house shown is for sale or connected to this sample. Not for deployment to a live domain. -->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -30,265 +30,332 @@
 
   <header class="head" data-head>
     <div class="head__row">
-      <a class="head__name" href="#top">Bernie Kolar</a>
+      <a class="head__name" href="#top">Bernie Kolar<small>Door County Real Estate</small></a>
       <button class="head__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav">Menu</button>
       <nav class="head__nav" id="nav" aria-label="Main">
         <a href="#about">About</a>
+        <a href="#homes">Homes</a>
         <a href="#peninsula">The Peninsula</a>
         <a href="#buying-selling">Buying &amp; Selling</a>
         <a href="#contact">Contact</a>
-        <a class="btn btn--small" href="#contact">Talk before you drive up</a>
+        <a class="head__phone" href="tel:+19205550137">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5 9 3l2 4.6-1.9 1.5a11 11 0 0 0 5.8 5.8l1.5-1.9L21 15l-.5 2.4a3 3 0 0 1-3.1 2.4C10 19.3 4.700 14 4.200 6.600a3 3 0 0 1 2.400-3.100Z"/></svg>
+          (920) 555-0137
+        </a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <div id="top" class="hero">
+    <section class="hero" id="top" aria-labelledby="hero-title">
       <picture class="hero__photo">
-        <source media="(max-width: 599px)" type="image/webp"
-                srcset="assets/photos/shoreline-hero-phone-800.webp 800w, assets/photos/shoreline-hero-phone-1200.webp 1200w" sizes="100vw" width="1200" height="900">
-        <img src="assets/photos/shoreline-hero-1800.webp"
-             srcset="assets/photos/shoreline-hero-1200.webp 1200w, assets/photos/shoreline-hero-1800.webp 1800w, assets/photos/shoreline-hero-2320.webp 2320w"
-             sizes="100vw" width="2320" height="994" fetchpriority="high"
-             alt="Open water running to a clear horizon past a shoreline of pale broken rock, in warm low light, Door County.">
+        <source media="(max-width: 699px)" type="image/webp"
+                srcset="assets/photos/ephraim-hero-phone-800.webp 800w, assets/photos/ephraim-hero-phone-1200.webp 1200w" sizes="100vw">
+        <img src="assets/photos/ephraim-hero-1800.webp"
+             srcset="assets/photos/ephraim-hero-1200.webp 1200w, assets/photos/ephraim-hero-1800.webp 1800w, assets/photos/ephraim-hero-2600.webp 2600w"
+             sizes="100vw" width="2600" height="1176" fetchpriority="high"
+             alt="White houses and inns with red roofs on a wooded hillside above Eagle Harbor at Ephraim, the trees turning in October under a clear sky.">
       </picture>
-    </div>
-
-    <section class="lap lap--blossom lap--hero" data-lap aria-labelledby="hero-name">
-      <div class="wrap hero__copy">
-        <div>
-          <h1 class="hero__name" id="hero-name">Bernie Kolar</h1>
-          <p class="hero__place">Door County, Wisconsin · The Door Peninsula</p>
-        </div>
-        <div>
-          <p class="hero__line">Cottages, waterfront and year-round houses on the Door Peninsula, sold on the calendar of a place with one real season.</p>
-          <p class="hero__actions">
-            <a class="btn" href="#contact">Talk before you drive up</a>
-            <a class="btn btn--line" href="#about">How I work</a>
-          </p>
-        </div>
+      <div class="hero__copy">
+        <h1 id="hero-title">Know the peninsula <br>before you buy on it</h1>
+        <p>Cottages, waterfront and year-round houses across Door County, sold on the calendar of a place with one real season.</p>
+        <a class="btn btn--light" href="#contact">Talk before you drive up</a>
       </div>
+      <p class="hero__place">Ephraim, on Eagle Harbor, in October</p>
     </section>
 
-    <section class="lap lap--shell" id="about" data-lap aria-labelledby="about-title">
-      <div class="wrap">
-        <h2 class="lap__title" id="about-title">About Bernie</h2>
-        <div class="about" data-rise-group>
-          <div class="about__prose">
-            <p class="about__open" data-rise>I learned this peninsula from the invoices.</p>
-            <p data-rise>Before I ever showed anyone a house, I did the books and the bookings for an orchard and a handful of seasonal cottages. Invoices, changeovers, the plumber in May, and the bills that turn up in February when nothing at all is coming in. It is not a glamorous way to learn a place. It is a thorough one.</p>
-            <p data-rise>People kept asking me what a place was actually like to own rather than to visit, and I kept having the answer, usually an unwelcome one. That was the better part of twenty years ago. It is still the question I am best at, and I have stopped apologizing for the answer.</p>
-            <p data-rise>Most of what sells here is on its best behavior for a few months of the year. So I ask people to make one return trip in the off-season, after the summer crew has gone home, and to treat it as an audit. I will tell you plainly which places change the most when you do.</p>
-            <p data-rise>I don’t take a listing I can’t photograph honestly, and I don’t pretend a cottage and a village house are the same sale. A cottage sells on water, access and what the last mile does in March. A house in town sells on the roof, the heat and the street. Mixing those up is how people come to own the wrong thing with great confidence.</p>
-          </div>
-          <figure class="about__photo" data-rise>
-            <img src="assets/photos/clapboard-gable-800.webp"
-                 srcset="assets/photos/clapboard-gable-640.webp 640w, assets/photos/clapboard-gable-800.webp 800w"
-                 sizes="(min-width: 900px) 420px, 100vw" width="800" height="1000" loading="lazy"
-                 alt="The gable end of a white clapboard building seen square-on, its lapped boards running level around two tall windows.">
-            <figcaption>White clapboard on the peninsula. Each board laps the one below it.</figcaption>
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <div class="about__text">
+        <p class="kicker">About Bernie</p>
+        <h2 id="about-title">I learned this peninsula from the invoices</h2>
+        <p>Before I ever showed anyone a house, I did the books and the bookings for an orchard and a handful of seasonal cottages. Changeovers, the plumber in May, and the bills that turn up in February when nothing is coming in.</p>
+        <p>People kept asking what a place was actually like to own rather than to visit, and I kept having the answer, usually an unwelcome one. It is still the question I am best at.</p>
+        <a class="btn" href="#why">How I work</a>
+      </div>
+      <div class="slider" data-slider aria-label="Houses on the peninsula" role="group">
+        <div class="slider__track" data-slider-track tabindex="0">
+          <figure>
+            <img src="assets/photos/noble-house-1400.webp" srcset="assets/photos/noble-house-900.webp 900w, assets/photos/noble-house-1400.webp 1400w"
+                 sizes="(min-width: 960px) 46vw, 88vw" width="1400" height="933" loading="lazy"
+                 alt="A tall white clapboard house with black shutters and a side porch, on a low limestone border.">
+            <figcaption>The Alexander Noble House in Fish Creek, now a museum</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photos/church-street-bungalows-1400.webp" srcset="assets/photos/church-street-bungalows-900.webp 900w, assets/photos/church-street-bungalows-1400.webp 1400w"
+                 sizes="(min-width: 960px) 46vw, 88vw" width="1400" height="933" loading="lazy"
+                 alt="A row of white Arts and Crafts bungalows with screened front porches and gabled roofs.">
+            <figcaption>Arts and Crafts bungalows in Ephraim</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photos/hillside-cottage-1400.webp" srcset="assets/photos/hillside-cottage-900.webp 900w, assets/photos/hillside-cottage-1400.webp 1400w"
+                 sizes="(min-width: 960px) 46vw, 88vw" width="1400" height="933" loading="lazy"
+                 alt="A white cottage with a coral roof, a deep front porch and a stone chimney.">
+            <figcaption>An Arts and Crafts cottage in Ephraim, with a stone chimney</figcaption>
           </figure>
         </div>
+        <button class="round slider__next" type="button" data-slider-next aria-label="Next photograph">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
       </div>
     </section>
 
-    <figure class="break" id="peninsula">
-      <img src="assets/photos/orchard-rows-1600.webp"
-           srcset="assets/photos/orchard-rows-1000.webp 1000w, assets/photos/orchard-rows-1600.webp 1600w, assets/photos/orchard-rows-2400.webp 2400w"
-           sizes="100vw" width="2400" height="1600" loading="lazy"
-           alt="A grass lane between two orchard rows at the end of the day, the trees dark against a low warm sky.">
-    </figure>
+    <section class="homes" id="homes" aria-labelledby="homes-title">
+      <div class="wrap homes__head">
+        <p class="kicker">What is out here</p>
+        <h2 id="homes-title">Homes on the peninsula</h2>
+        <p>From brick farmhouses in the south to cottages in the trees on the lake side. None of these is for sale. They are the kinds of houses people call me about.</p>
+      </div>
+      <div class="rail wrap" data-rail>
+        <button class="round rail__arrow rail__arrow--prev" type="button" data-rail-prev aria-label="Previous home">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+        </button>
+        <ul class="rail__list" data-rail-list>
+          <li class="rail__item is-open">
+            <button type="button" aria-expanded="true">
+              <img src="assets/photos/lake-cottage-1200.webp" srcset="assets/photos/lake-cottage-800.webp 800w, assets/photos/lake-cottage-1200.webp 1200w"
+                   sizes="(min-width: 960px) 50vw, 80vw" width="1200" height="960" loading="lazy"
+                   alt="A low timber-framed cottage with walls of glass, lit up at dusk among tall trees.">
+              <span class="rail__cap"><strong>A cottage in the trees</strong><span>Above Lake Michigan</span></span>
+            </button>
+          </li>
+          <li class="rail__item">
+            <button type="button" aria-expanded="false">
+              <img src="assets/photos/brick-farmhouse-640.webp" width="640" height="800" loading="lazy"
+                   alt="A two-story red brick farmhouse with arched windows and a round window in the gable.">
+              <span class="rail__cap"><strong>Red brick farmhouse</strong><span>Door County</span></span>
+            </button>
+          </li>
+          <li class="rail__item">
+            <button type="button" aria-expanded="false">
+              <img src="assets/photos/hillside-cottage-900.webp" width="900" height="600" loading="lazy"
+                   alt="A white cottage with a coral roof and a deep front porch on a golden lawn.">
+              <span class="rail__cap"><strong>A village cottage</strong><span>Ephraim</span></span>
+            </button>
+          </li>
+          <li class="rail__item">
+            <button type="button" aria-expanded="false">
+              <img src="assets/photos/gabled-brick-1000.webp" srcset="assets/photos/gabled-brick-640.webp 640w, assets/photos/gabled-brick-1000.webp 1000w"
+                   sizes="(min-width: 960px) 50vw, 80vw" width="1000" height="1250" loading="lazy"
+                   alt="A red brick house with a white gable and a full-width front porch.">
+              <span class="rail__cap"><strong>Brick with a front porch</strong><span>Brussels, southern Door County</span></span>
+            </button>
+          </li>
+          <li class="rail__item">
+            <button type="button" aria-expanded="false">
+              <img src="assets/photos/brick-house-640.webp" width="640" height="800" loading="lazy"
+                   alt="A square red brick house with a metal roof, on a footing of pale limestone.">
+              <span class="rail__cap"><strong>Brick on a limestone footing</strong><span>Door County</span></span>
+            </button>
+          </li>
+        </ul>
+        <button class="round rail__arrow rail__arrow--next" type="button" data-rail-next aria-label="Next home">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </section>
 
-    <section class="lap lap--blossom" data-lap aria-labelledby="peninsula-title">
+    <section class="why wrap" id="why" aria-labelledby="why-title">
+      <h2 id="why-title">Why work with Bernie</h2>
+      <div class="why__grid">
+        <div>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 28 14 4M23 28 18 4M16 7v4M16 15v4M16 23v4"/></svg>
+          <h3>I have driven the road in March</h3>
+          <p>Access, plowing and what the last mile does off-season. The part that does not show in July.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 15 16 5l11 10M8 13v14h16V13M13 27v-8h6v8"/></svg>
+          <h3>I ask what a place takes to keep</h3>
+          <p>I ran the bookings and the bills on seasonal property, so the holding questions come up early instead of in year two.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 8h22v19H5zM5 14h22M11 4v7M21 4v7"/></svg>
+          <h3>One real season is a planning problem</h3>
+          <p>The season is short and everything out here runs to its calendar. I work backwards from that rather than hoping.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="peninsula" id="peninsula" aria-labelledby="peninsula-title">
       <div class="wrap">
-        <h2 class="lap__title" id="peninsula-title">The peninsula</h2>
-        <div class="place place--tall" data-rise-group>
-          <div class="place__text" data-rise>
-            <h3>Water on both sides</h3>
-            <p>Lake Michigan runs down the east side and Green Bay down the west, and from the shore there is a horizon with no far side to it. The lake side gets the sunrise and the open swell. The bay side gets the sunset.</p>
-            <p>Two lighthouses are worth the drive: Cana Island near Baileys Harbor, reached by a causeway, and Eagle Bluff inside Peninsula State Park.</p>
-          </div>
-          <figure class="place__photo" data-rise>
-            <img src="assets/photos/eagle-bluff-light-900.webp"
-                 srcset="assets/photos/eagle-bluff-light-560.webp 560w, assets/photos/eagle-bluff-light-900.webp 900w"
-                 sizes="(min-width: 900px) 30vw, 100vw" width="900" height="1080" loading="lazy"
+        <div class="peninsula__head">
+          <p class="kicker">The place</p>
+          <h2 id="peninsula-title">Water on both sides, limestone underneath</h2>
+        </div>
+        <div class="places">
+          <article>
+            <img src="assets/photos/eagle-bluff-light-900.webp" srcset="assets/photos/eagle-bluff-light-560.webp 560w, assets/photos/eagle-bluff-light-900.webp 900w"
+                 sizes="(min-width: 800px) 30vw, 90vw" width="900" height="1080" loading="lazy"
                  alt="The lantern room and brick tower of Eagle Bluff Lighthouse against a clear sky.">
-            <figcaption>Eagle Bluff Lighthouse, Peninsula State Park.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="lap lap--shell" data-lap aria-labelledby="limestone-title">
-      <div class="wrap">
-        <div class="place place--flip" data-rise-group>
-          <div class="place__text" data-rise>
-            <h3 id="limestone-title">Limestone</h3>
-            <p>The peninsula is a long spine of limestone, part of the Niagara Escarpment, and you can see the rock wherever the land meets the water. On the Green Bay side it stands up as bluffs. On the Lake Michigan side it slopes away into ledge and shelf rock at the waterline. Walk it once and the shape of the shoreline starts to make sense.</p>
-          </div>
-          <figure class="place__photo" data-rise>
-            <img src="assets/photos/shelf-rock-1000.webp"
-                 srcset="assets/photos/shelf-rock-640.webp 640w, assets/photos/shelf-rock-1000.webp 1000w"
-                 sizes="(min-width: 900px) 34vw, 100vw" width="1000" height="1000" loading="lazy"
+            <h3>Two shores</h3>
+            <p>Lake Michigan runs down the east side and Green Bay down the west. The lake side gets the sunrise, the bay side the sunset. Eagle Bluff Lighthouse stands inside Peninsula State Park, and Cana Island, near Baileys Harbor, is reached by a causeway.</p>
+          </article>
+          <article>
+            <img src="assets/photos/shelf-rock-1000.webp" srcset="assets/photos/shelf-rock-640.webp 640w, assets/photos/shelf-rock-1000.webp 1000w"
+                 sizes="(min-width: 800px) 30vw, 90vw" width="1000" height="1000" loading="lazy"
                  alt="Flat shelves of pale rock stepping down into shallow water on a Wisconsin shoreline.">
-            <figcaption>Shelf rock at the waterline, Wisconsin.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="lap lap--blossom" data-lap aria-labelledby="orchards-title">
-      <div class="wrap">
-        <div class="place place--pair" data-rise-group>
-          <div class="place__text" data-rise>
-            <h3 id="orchards-title">Orchards</h3>
+            <h3>Limestone</h3>
+            <p>The peninsula is a long spine of limestone, part of the Niagara Escarpment. On the Green Bay side it stands up as bluffs. On the Lake Michigan side it slopes away into ledge and shelf rock at the waterline.</p>
+          </article>
+          <article>
+            <img src="assets/photos/orchard-rows-1000.webp" srcset="assets/photos/orchard-rows-1000.webp 1000w, assets/photos/orchard-rows-1600.webp 1600w"
+                 sizes="(min-width: 800px) 30vw, 90vw" width="1600" height="1067" loading="lazy"
+                 alt="A grass lane between two orchard rows at the end of the day, the trees dark against a low warm sky.">
+            <h3>Orchards</h3>
             <p>Cherry and apple, in rows, are the county’s signature crop. They put on blossom in spring and throw long shadows by late season, and a back-road drive through them is worth the extra hour in either.</p>
-          </div>
-          <div class="place__text" data-rise>
-            <h3>Villages and harbors</h3>
-            <p>White clapboard, gable ends, working harbors and boathouses, from Sturgeon Bay up through Egg Harbor, Fish Creek and Ephraim, and across to Baileys Harbor. And the fish boil, a local tradition: whitefish and potatoes in a kettle over an open fire, finished with a boil-over worth standing back for.</p>
-          </div>
+          </article>
         </div>
+      </div>
+      <figure class="harbor">
+        <img src="assets/photos/fish-creek-harbour-1600.webp"
+             srcset="assets/photos/fish-creek-harbour-1000.webp 1000w, assets/photos/fish-creek-harbour-1600.webp 1600w, assets/photos/fish-creek-harbour-2040.webp 2040w"
+             sizes="100vw" width="2040" height="850" loading="lazy"
+             alt="Sailboats moored across Fish Creek harbor at dusk, seen from the beach under a soft pink sky.">
+        <figcaption>
+          <h3>Villages and harbors</h3>
+          <p>White clapboard and working harbors, from Sturgeon Bay up through Egg Harbor, Fish Creek and Ephraim, and across to Baileys Harbor. And the fish boil: whitefish and potatoes in a kettle over an open fire, finished with a boil-over worth standing back for.</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="wrap bs" id="buying-selling" aria-labelledby="bs-title">
+      <h2 id="bs-title">Buying and selling</h2>
+      <div class="bs__grid">
+        <article>
+          <img src="assets/photos/cottage-fireplace-1200.webp" srcset="assets/photos/cottage-fireplace-800.webp 800w, assets/photos/cottage-fireplace-1200.webp 1200w"
+               sizes="(min-width: 800px) 44vw, 90vw" width="1200" height="1368" loading="lazy"
+               alt="A timber-roofed cottage room with a black stove, tall windows and low leather chairs.">
+          <h3>Buying</h3>
+          <dl>
+            <dt>The water before the house</dt>
+            <dd>We talk about the water, the access and the road before any particular place.</dd>
+            <dt>See it properly</dt>
+            <dd>We see places in person, and once in the off-season wherever that can be done.</dd>
+            <dt>The list, early</dt>
+            <dd>Shoreland, septic and well questions go in front of the people whose job they are, and I stay on it through to close.</dd>
+          </dl>
+        </article>
+        <article>
+          <img src="assets/photos/screened-porch-1200.webp" srcset="assets/photos/screened-porch-800.webp 800w, assets/photos/screened-porch-1200.webp 1200w"
+               sizes="(min-width: 800px) 44vw, 90vw" width="1200" height="960" loading="lazy"
+               alt="A screened porch with a wicker sofa under a timber ceiling, autumn trees beyond the screens.">
+          <h3>Selling</h3>
+          <dl>
+            <dt>What it actually is</dt>
+            <dd>A cottage and a village house are two different sales. We start by being honest about which one you have.</dd>
+            <dt>The honest season</dt>
+            <dd>We photograph and list it in the season that shows it as it is.</dd>
+            <dt>The follow-through</dt>
+            <dd>I handle the inquiries, the showings and everything after them, including the buyers who are five hours away.</dd>
+          </dl>
+        </article>
       </div>
     </section>
 
-    <section class="lap lap--shell" data-lap aria-labelledby="why-title">
-      <div class="wrap">
-        <h2 class="lap__title" id="why-title">Why work with Bernie</h2>
-        <div class="points" data-rise-group>
-          <div data-rise>
-            <h3>I have driven the road in March.</h3>
-            <p>Access, plowing and what the last mile does off-season. The part that does not show in July.</p>
-          </div>
-          <div data-rise>
-            <h3>I ask what a place takes to keep, not just what it takes to buy.</h3>
-            <p>I ran the bookings and the bills on seasonal property, so the holding questions come up early instead of in year two.</p>
-          </div>
-          <div data-rise>
-            <h3>One real season is a planning problem.</h3>
-            <p>The season is short and everything out here runs to its calendar. I work backwards from that rather than hoping.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <figure class="break break--wide">
-      <img src="assets/photos/fish-creek-harbour-1600.webp"
-           srcset="assets/photos/fish-creek-harbour-1000.webp 1000w, assets/photos/fish-creek-harbour-1600.webp 1600w, assets/photos/fish-creek-harbour-2040.webp 2040w"
-           sizes="100vw" width="2040" height="850" loading="lazy"
-           alt="Sailboats moored across Fish Creek harbor at dusk, seen from the beach under a soft pink sky.">
-    </figure>
-
-    <section class="lap lap--blossom" id="buying-selling" data-lap aria-labelledby="bs-title">
-      <div class="wrap">
-        <h2 class="lap__title" id="bs-title">Buying and selling</h2>
-        <div class="split" data-rise-group>
-          <div class="split__col" data-rise>
-            <h3 class="split__head">Buying</h3>
-            <dl class="steps">
-              <dt>The water before the house</dt>
-              <dd>We talk about the water, the access and the road before we talk about any particular place.</dd>
-              <dt>See it properly</dt>
-              <dd>We see places in person, and once in the off-season wherever that can be done.</dd>
-              <dt>The list, early</dt>
-              <dd>Shoreland, septic and well questions go on the list early and in front of the people whose job they are, and I stay on it through to close.</dd>
-            </dl>
-          </div>
-          <div class="split__col" data-rise>
-            <h3 class="split__head">Selling</h3>
-            <dl class="steps">
-              <dt>What it actually is</dt>
-              <dd>A cottage and a village house are two different sales. We start by being honest about which one you have.</dd>
-              <dt>The honest season</dt>
-              <dd>We photograph and list it in the season that shows it as it is.</dd>
-              <dt>The follow-through</dt>
-              <dd>I handle the inquiries, the showings and everything after them, including the buyers who are five hours away.</dd>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="lap lap--shell" data-lap aria-labelledby="wont-title">
-      <div class="wrap">
-        <h2 class="lap__title" id="wont-title">Things I won’t do</h2>
-        <ul class="wont" data-rise-group>
-          <li data-rise><strong>I won’t rush a close into the shoulder season</strong> just because the calendar is tidy. If the place is better seen in May, we wait for May.</li>
-          <li data-rise><strong>I won’t sell you a place on a road I haven’t driven off-season.</strong> If I haven’t, I’ll say so and go and drive it.</li>
-          <li data-rise><strong>I won’t take a listing I can’t photograph honestly.</strong> If the only good picture of a place is one week a year, that is worth saying out loud before we list it.</li>
-          <li data-rise><strong>I won’t answer a shoreland, septic or well question I’m not qualified to answer.</strong> I’ll make sure it’s asked, early, of the person whose job it is.</li>
-          <li data-rise><strong>I won’t tell you a place is right for you when it isn’t.</strong> You will find out in year two anyway, and you will remember who sold it to you.</li>
+    <section class="wont" aria-labelledby="wont-title">
+      <div class="wrap wont__grid">
+        <h2 id="wont-title">Things I won’t do</h2>
+        <ul>
+          <li><strong>I won’t rush a close into the shoulder season</strong> just because the calendar is tidy. If the place is better seen in May, we wait for May.</li>
+          <li><strong>I won’t sell you a place on a road I haven’t driven off-season.</strong> If I haven’t, I’ll say so and go and drive it.</li>
+          <li><strong>I won’t take a listing I can’t photograph honestly.</strong> If the only good picture of a place is one week a year, that is worth saying before we list it.</li>
+          <li><strong>I won’t answer a shoreland, septic or well question I’m not qualified to answer.</strong> I’ll make sure it’s asked, early, of the person whose job it is.</li>
+          <li><strong>I won’t tell you a place is right for you when it isn’t.</strong> You will find out in year two anyway, and you will remember who sold it to you.</li>
         </ul>
       </div>
     </section>
 
-    <section class="lap lap--blossom" id="contact" data-lap aria-labelledby="contact-title">
-      <div class="wrap">
-        <h2 class="lap__title" id="contact-title">Talk before you drive up</h2>
-        <div class="contact" data-rise-group>
-          <div data-rise>
-            <p class="contact__lead">If you’re coming up for a weekend to look at places, call me before you set off. It changes what the weekend is worth.</p>
-            <p class="contact__big"><a href="tel:+19205550137">(920) 555-0137</a></p>
-            <p class="contact__big contact__big--mail"><a href="mailto:bernie@bluffsidere.com">bernie@bluffsidere.com</a></p>
-          </div>
-          <form class="form" action="thanks.html" method="get" novalidate data-form data-rise>
-            <div class="field">
-              <label for="f-name">Name</label>
-              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
-              <p class="field__error" id="e-name" hidden></p>
-            </div>
-            <div class="field">
-              <label for="f-email">Email</label>
-              <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="e-email">
-              <p class="field__error" id="e-email" hidden></p>
-            </div>
-            <div class="field">
-              <label for="f-phone">Phone</label>
-              <input id="f-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="e-contact">
-              <p class="field__error" id="e-contact" hidden></p>
-            </div>
-            <div class="field">
-              <label for="f-kind">Buying or selling?</label>
-              <select id="f-kind" name="kind">
-                <option value="">Choose one</option>
-                <option>Buying</option>
-                <option>Selling</option>
-                <option>Both</option>
-                <option>Just looking</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="f-message">Message</label>
-              <textarea id="f-message" name="message" rows="5"></textarea>
-            </div>
-            <p class="form__note">What you send comes straight to Bernie and goes nowhere else. No list, no newsletter.</p>
-            <button class="btn" type="submit">Send it to Bernie</button>
-          </form>
+    <div class="wrap">
+      <aside class="band" aria-label="Plan your trip">
+        <span class="band__icon">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="11" cy="21" r="6"/><path d="m15.500 16.500 11-11M22 10l4 4M18.500 13.500l3 3"/></svg>
+        </span>
+        <div>
+          <h2>Coming up for a weekend?</h2>
+          <p>Call before you set off. It changes what the weekend is worth.</p>
         </div>
+        <a class="btn" href="#contact">Talk before you drive up</a>
+      </aside>
+    </div>
+
+    <section class="wrap contact" id="contact" aria-labelledby="contact-title">
+      <div>
+        <h2 id="contact-title">Talk before you drive up</h2>
+        <p>Tell me what you’re thinking about and when you’re coming. I’ll tell you what is worth seeing.</p>
+        <p class="contact__big"><a href="tel:+19205550137">(920) 555-0137</a></p>
+        <p class="contact__big contact__big--mail"><a href="mailto:bernie@bluffsidere.com">bernie@bluffsidere.com</a></p>
       </div>
+      <form class="form" action="thanks.html" method="get" novalidate data-form>
+        <div class="field">
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+          <p class="field__error" id="e-name" hidden></p>
+        </div>
+        <div class="form__two">
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="e-email">
+            <p class="field__error" id="e-email" hidden></p>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="e-contact">
+            <p class="field__error" id="e-contact" hidden></p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-kind">Buying or selling?</label>
+          <select id="f-kind" name="kind">
+            <option value="">Choose one</option>
+            <option>Buying</option>
+            <option>Selling</option>
+            <option>Both</option>
+            <option>Just looking</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" rows="4"></textarea>
+        </div>
+        <p class="form__note">What you send comes straight to Bernie and goes nowhere else. No list, no newsletter.</p>
+        <button class="btn" type="submit">Send it to Bernie</button>
+      </form>
     </section>
   </main>
 
-  <footer class="lap lap--shell foot">
+  <footer class="foot">
+    <div class="wrap foot__grid">
+      <div>
+        <p class="foot__name">Bernadette Kolar</p>
+        <p>Bluffside Real Estate Co.</p>
+        <p>Door County, Wisconsin</p>
+      </div>
+      <div>
+        <p>Equal Housing Opportunity</p>
+        <p><a href="privacy.html">Privacy</a></p>
+        <p>Designed by ThinkFirst Studios</p>
+      </div>
+    </div>
     <div class="wrap">
-      <p class="foot__name">Bernadette Kolar</p>
-      <p>Door County, Wisconsin · The Door Peninsula</p>
-      <p>Bluffside Real Estate Co.</p>
-      <p>Equal Housing Opportunity</p>
-      <p><a href="privacy.html">Privacy</a></p>
       <details class="foot__credits">
         <summary>Photo credits</summary>
-        <p>Photographs cropped, straightened and color-adjusted from the originals.</p>
+        <p>Photographs cropped and color-adjusted from the originals. Houses are shown as examples of the area only.</p>
         <ul>
-          <li><a href="https://unsplash.com/photos/a-beautiful-sunset-over-the-ocean-with-rocks-in-the-foreground-HpwpplwMd3E">Door County shoreline</a>, Dave Hoefler, Unsplash License</li>
-          <li><a href="https://commons.wikimedia.org/wiki/File:White_Gull_Inn_(53918706138).jpg">White Gull Inn</a>, Chris Rycroft, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></li>
-          <li><a href="https://www.pexels.com/photo/apple-orchard-at-sunset-in-pennsylvania-countryside-32211714/">Apple orchard at sunset</a>, Jonathan David, Pexels License</li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Ephraim,_Door_County,_Wisconsin_-_52454707506.jpg">Ephraim, Door County, Wisconsin</a>, RB Photo, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Alexander_Noble_House_Side_August_2015.jpg">Alexander Noble House</a>, Royalbroil, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Church_Street,_Ephraim,_WI_-_54221495846.jpg">Church Street, Ephraim</a>, w_lemay, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Cherry_Street,_Ephraim,_WI_-_54221514731.jpg">Cherry Street, Ephraim</a>, w_lemay, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Architect%27s_Cottage_exterior.jpg">Architect’s Cottage</a>, Hedrich Blessing Photographers, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:AugustDraizeFarmsteadHouse.jpg">August Draize Farmstead house</a>, Royalbroil, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:J.B.BoucheHouseBrusselsWisconsin.jpg">J.B. Bouche House</a>, Royalbroil, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:JoachineJFalqueHouse.jpg">Joachine J. Falque House</a>, Royalbroil, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
           <li><a href="https://www.pexels.com/photo/close-up-of-the-eagle-bluff-lighthouse-8353597/">Eagle Bluff Lighthouse</a>, RockTree Photography, Pexels License</li>
           <li><a href="https://www.pexels.com/photo/rocky-beach-by-the-sea-27036347/">Rocky shoreline, Wisconsin</a>, Robert Schrader, Pexels License</li>
+          <li><a href="https://www.pexels.com/photo/apple-orchard-at-sunset-in-pennsylvania-countryside-32211714/">Apple orchard at sunset</a>, Jonathan David, Pexels License</li>
           <li><a href="https://commons.wikimedia.org/wiki/File:Fish_Creek_Harbor_Park.jpg">Fish Creek Harbor Park</a>, Markheffron2, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></li>
+          <li><a href="https://www.pexels.com/photo/living-room-interior-with-furniture-in-modern-cottage-4906249/">Living room in a modern cottage</a>, Maria Orlova, Pexels License</li>
+          <li><a href="https://www.pexels.com/photo/interior-of-a-room-with-sofa-and-chairs-in-a-wooden-house-5008400/">Screened porch</a>, Curtis Adams, Pexels License</li>
         </ul>
       </details>
-      <p class="foot__small">Designed by ThinkFirst Studios</p>
     </div>
   </footer>
 

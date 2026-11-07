@@ -3,7 +3,7 @@
 
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Header condenses once the page moves
+  // Header turns solid once the page moves
   var head = document.querySelector('[data-head]');
   if (head) {
     var onScroll = function () { head.classList.toggle('is-condensed', window.scrollY > 32); };
@@ -27,29 +27,34 @@
     });
   }
 
-  // Content rises with a 60ms stagger
-  document.querySelectorAll('[data-rise-group]').forEach(function (group) {
-    group.querySelectorAll('[data-rise]').forEach(function (el, i) {
-      el.style.transitionDelay = (i * 60) + 'ms';
+  // About slider: the arrow moves one photograph on, then back to the start
+  var track = document.querySelector('[data-slider-track]');
+  var next = document.querySelector('[data-slider-next]');
+  if (track && next) {
+    next.addEventListener('click', function () {
+      var step = track.firstElementChild.getBoundingClientRect().width + 16;
+      var end = track.scrollLeft + track.clientWidth >= track.scrollWidth - 8;
+      track.scrollTo({ left: end ? 0 : track.scrollLeft + step, behavior: reduced ? 'auto' : 'smooth' });
     });
-  });
+  }
 
-  // Each lap settles once as it arrives
-  var laps = document.querySelectorAll('[data-lap]');
-  var groups = document.querySelectorAll('[data-rise-group]');
-  if (reduced || !('IntersectionObserver' in window)) {
-    laps.forEach(function (l) { l.classList.add('is-settled'); });
-    groups.forEach(function (g) { g.classList.add('is-risen'); });
-  } else {
-    var seen = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add(entry.target.hasAttribute('data-lap') ? 'is-settled' : 'is-risen');
-        seen.unobserve(entry.target);
+  // Homes rail: one panel open at a time
+  var rail = document.querySelector('[data-rail]');
+  if (rail) {
+    var items = Array.prototype.slice.call(rail.querySelectorAll('.rail__item'));
+    var current = 0;
+    var open = function (i) {
+      current = (i + items.length) % items.length;
+      items.forEach(function (item, n) {
+        item.classList.toggle('is-open', n === current);
+        item.querySelector('button').setAttribute('aria-expanded', String(n === current));
       });
-    }, { threshold: 0.08 });
-    laps.forEach(function (l) { seen.observe(l); });
-    groups.forEach(function (g) { seen.observe(g); });
+    };
+    items.forEach(function (item, i) {
+      item.querySelector('button').addEventListener('click', function () { open(i); });
+    });
+    rail.querySelector('[data-rail-prev]').addEventListener('click', function () { open(current - 1); });
+    rail.querySelector('[data-rail-next]').addEventListener('click', function () { open(current + 1); });
   }
 
   // Form: a name and one way to reach you, nothing else required
