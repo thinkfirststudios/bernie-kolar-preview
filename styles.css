@@ -111,11 +111,11 @@ a { color: var(--cherry); text-underline-offset: 3px; }
 .places { display: grid; gap: 36px; margin-block: 40px clamp(56px, 7vw, 88px); }
 .places img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--r); margin-bottom: 18px; }
 .places p { margin-top: 8px; }
-.harbor { position: relative; margin: 0; color: var(--shell); }
-.harbor img { width: 100%; min-height: 560px; max-height: 720px; object-fit: cover; }
-.harbor figcaption { position: absolute; inset: auto 0 0; padding: 96px var(--gutter) 40px; background: linear-gradient(0deg, rgba(42, 29, 33, .94), rgba(42, 29, 33, .8) 60%, rgba(42, 29, 33, 0)); }
-.harbor h3 { font-size: clamp(1.75rem, 3vw, 2.5rem); }
-.harbor p { max-width: 42em; margin-top: 8px; }
+.country { position: relative; margin: 0; color: var(--shell); }
+.country img { width: 100%; min-height: 560px; max-height: 720px; object-fit: cover; }
+.country figcaption { position: absolute; inset: auto 0 0; padding: 96px var(--gutter) 40px; background: linear-gradient(0deg, rgba(42, 29, 33, .94), rgba(42, 29, 33, .8) 60%, rgba(42, 29, 33, 0)); }
+.country h3 { font-size: clamp(1.75rem, 3vw, 2.5rem); }
+.country p { max-width: 42em; margin-top: 8px; }
 
 /* Buying and selling */
 .bs { padding-block: clamp(64px, 8vw, 112px); }
